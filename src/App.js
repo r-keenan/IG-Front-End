@@ -17,6 +17,13 @@ const posts = [
     image: {
       url: "/uploads/ali_karimi_0_N1_C_Nx_Oqw_I0_unsplash_f0855a2dfe.jpg"
     }
+  },
+  {
+  likes: 88,
+  description: "The third post",
+  image: {
+    url: "/uploads/ali_karimi_0_N1_C_Nx_Oqw_I0_unsplash_f0855a2dfe.jpg"
+    }
   }
 ]
 
