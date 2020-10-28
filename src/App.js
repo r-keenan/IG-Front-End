@@ -1,9 +1,11 @@
+import React, {useState, useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Post from './components/Post'
 
 
-const posts = [
+
+const mockPosts = [
   {
     likes: 20,
     description: "This is a post",
@@ -28,6 +30,18 @@ const posts = [
 ]
 
 function App() {
+  /*useState() is being set as default as an empty list*/
+  const [posts, setPosts] = useState([])
+
+  /*useEffect() runs a function whenever a certain condition is met
+  This sets the default of setPosts to mockPosts variable*/
+
+ /*the empty list at the end of this indicates that you only want to run this function once. 
+ This essentially mounts the component*/ 
+  useEffect(() => {
+    setPosts(mockPosts)
+  }, [])
+
   return (
     < div className="App">
     {posts.map(post =>(
