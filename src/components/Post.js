@@ -2,7 +2,7 @@ import React from 'react'
 
 const post = {
     "id": 1,
-    "description": "This is a lattern.",
+    "description": "This is a lantern.",
     "likes": 20,
     "users_permissions_user": null,
     "published_at": "2020-10-27T17:16:53.059Z",
