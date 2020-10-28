@@ -10,5 +10,10 @@ body{
 }
 .Post__Image {
   max-width: 250px;
-
+}
+a {
+  text-decoration: none;
+}
+a.active{
+  text-decoration: underline;
 }
