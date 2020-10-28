@@ -39,7 +39,15 @@ function App() {
  /*the empty list at the end of this indicates that you only want to run this function once. 
  This essentially mounts the component*/ 
   useEffect(() => {
-    setPosts(mockPosts)
+    const getPosts = async () =>
+    {
+      /*this creates an asyncronous request to posts*/
+      const response = await fetch('http://localhost:1337/posts')
+      const data = await response.json()
+      setPosts(data)
+    }
+
+    getPosts()
   }, [])
 
   return (
